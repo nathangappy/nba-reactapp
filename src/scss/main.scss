@@ -1,0 +1,12 @@
+// abstracts
+@import './abstracts/mixins.scss';
+@import './abstracts/variables.scss';
+
+// base
+@import './base/reset.scss';
+
+// components
+@import './components//scoreboard.scss';
+
+// layout
+@import './layout/layout.scss';
