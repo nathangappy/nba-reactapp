@@ -1,6 +1,6 @@
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { GetAllPlayers } from './helpers/GetAllPlayers';
-import { GetScoreboard } from './helpers/GetScoreboard';
 
 // Fixed Components
 import Navigation from './components/Navigation';
@@ -9,13 +9,17 @@ import Scoreboard from './components/Scoreboard';
 // Pages
 import HomePage from './pages/Home';
 import StandingsPage from './pages/Standings';
+import PlayerSearchPage from './pages/PlayerSearch';
+import PlayerDetails from './pages/PlayerDetails';
 
 // Import Sass Files
 import './scss/main.scss';
 
 function App() {
   // Load all NBA Players on App Load
-  // GetAllPlayers();
+  useEffect(() => {
+    GetAllPlayers();
+  }, []);
 
   // Render different pages for each route
   return (
@@ -25,6 +29,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/standings' element={<StandingsPage />} />
+        <Route path='/player' element={<PlayerSearchPage />} />
+        <Route path='/player/:personId' element={<PlayerDetails />} />
       </Routes>
     </>
   );

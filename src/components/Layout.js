@@ -1,6 +1,4 @@
 import React from 'react';
-import Navigation from './Navigation';
-import Scoreboard from './Scoreboard';
 
 const Layout = ({ children }) => {
   return (

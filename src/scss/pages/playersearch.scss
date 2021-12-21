@@ -1,0 +1,51 @@
+.player {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+
+  &__search {
+    h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    form {
+      margin: 0 auto;
+      max-width: 600px;
+      // background-color: $nba-blue;
+      padding: 4rem;
+    }
+
+    input {
+      font-size: 2rem;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+.results {
+  font-size: 2rem;
+
+  &__table {
+    width: 100%;
+    background-color: $site-light;
+    border-collapse: collapse;
+  }
+
+  &__headers {
+    background-color: $nba-blue;
+    color: $nba-white;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+}
