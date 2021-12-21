@@ -6,7 +6,12 @@
 @import './base/reset.scss';
 
 // components
-@import './components//scoreboard.scss';
+@import './components/scoreboard.scss';
+@import './components/standings.scss';
+@import './components/navigation.scss';
 
 // layout
 @import './layout/layout.scss';
+
+// pages
+@import './pages/home.scss';

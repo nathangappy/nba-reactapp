@@ -1,0 +1,23 @@
+.header {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  padding: 2rem;
+  background-color: $nba-blue;
+  color: $nba-white;
+
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    margin: 0 1rem;
+    font-size: 2rem;
+  }
+}

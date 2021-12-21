@@ -1,0 +1,74 @@
+.standings {
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__selector {
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 3px solid $nba-red;
+    background-color: $nba-white;
+    color: $nba-red;
+    &:hover {
+      background-color: $nba-red;
+      color: $nba-white;
+      cursor: pointer;
+    }
+    &--active {
+      background-color: $nba-red;
+      color: $nba-white;
+    }
+  }
+
+  &__table {
+    background-color: $site-light;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__identity {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__headers {
+    background-color: $nba-red;
+    color: $nba-white;
+    text-transform: uppercase;
+
+    th:first-of-type {
+      text-align: left;
+      padding-left: 1rem;
+      width: 25%;
+      min-width: 200px;
+    }
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+}

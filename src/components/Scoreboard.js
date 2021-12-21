@@ -15,8 +15,6 @@ const Scoreboard = () => {
     setScoreboard(scoreboard_data.games);
   };
 
-  console.log(scoreboard);
-
   return (
     <div className='scoreboard'>
       {scoreboard ? (

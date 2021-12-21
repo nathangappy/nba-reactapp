@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Player = () => {
-  return <div>Single Player Page</div>;
+  return <div></div>;
 };
 
 export default Player;
