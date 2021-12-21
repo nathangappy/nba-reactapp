@@ -1,0 +1,26 @@
+.playerstats {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__headers {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: $nba-white;
+    text-transform: uppercase;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+}

@@ -9,5 +9,7 @@ export const FormatQuarter = (period) => {
       return '3rd';
     case 4:
       return '4th';
+    case period > 4:
+      return 'OT' + period;
   }
 };

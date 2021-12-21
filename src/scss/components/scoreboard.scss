@@ -1,7 +1,7 @@
 .scoreboard {
   background-color: $site-light;
   // border-top: 5px solid black;
-  // border-bottom: 5px solid black;
+  border-bottom: 5px solid $nba-blue;
 
   &__list {
     display: flex;

@@ -27,7 +27,7 @@ const Table = ({ teams, title }) => {
                     alt=''
                     className='standings__logo'
                   />
-                  {team.teamSitesOnly.teamName} {team.teamSitesOnly.teamTricode}
+                  {team.teamSitesOnly.teamName} {team.teamSitesOnly.teamNickname}
                 </div>
               </th>
               <th>{team.win}</th>

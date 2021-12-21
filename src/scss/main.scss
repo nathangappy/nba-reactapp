@@ -9,6 +9,8 @@
 @import './components/scoreboard.scss';
 @import './components/standings.scss';
 @import './components/navigation.scss';
+@import './components/playerbio.scss';
+@import './components/playerstats.scss';
 
 // layout
 @import './layout/layout.scss';
@@ -16,3 +18,4 @@
 // pages
 @import './pages/home.scss';
 @import './pages/playersearch.scss';
+@import './pages/playerdetails.scss';
