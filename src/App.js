@@ -11,6 +11,7 @@ import HomePage from './pages/Home';
 import StandingsPage from './pages/Standings';
 import PlayerSearchPage from './pages/PlayerSearch';
 import PlayerDetails from './pages/PlayerDetails';
+import TeamsPage from './pages/Teams';
 
 // Import Sass Files
 import './scss/main.scss';
@@ -31,6 +32,7 @@ function App() {
         <Route path='/standings' element={<StandingsPage />} />
         <Route path='/players' element={<PlayerSearchPage />} />
         <Route path='/player/:personId' element={<PlayerDetails />} />
+        <Route path='/teams' element={<TeamsPage />} />
       </Routes>
     </>
   );

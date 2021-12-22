@@ -8,7 +8,7 @@ export const GetPlayerProfile = async (personId) => {
 
   // Get players team
   const teams = await GetAllTeams();
-  const playerTeam = teams.league.standard.filter((team) => team.teamId === playerBio[0].teamId);
+  const playerTeam = teams.filter((team) => team.teamId === playerBio[0].teamId);
 
   // Get current year
   const year = new Date().getFullYear();

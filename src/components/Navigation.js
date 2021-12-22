@@ -10,6 +10,7 @@ const Navigation = () => {
       <nav className='navigation'>
         <Link to='/standings'>Standings</Link>
         <Link to='/players'>Players</Link>
+        <Link to='/teams'>Teams</Link>
       </nav>
     </header>
   );

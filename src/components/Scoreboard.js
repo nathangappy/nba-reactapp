@@ -26,7 +26,7 @@ const Scoreboard = () => {
               <div className='scoreboard__team'>
                 <img src={`images/${game.vTeam.triCode}.png`} alt='Visitor Logo' />
                 <p>{game.vTeam.triCode}</p>
-                {game.isGameActivated || game.endTimeUTC ? (
+                {(game.isGameActivated && game.period.current > 0) || game.endTimeUTC ? (
                   <span>{game.vTeam.score}</span>
                 ) : (
                   <span>
@@ -39,7 +39,7 @@ const Scoreboard = () => {
               <div className='scoreboard__team'>
                 <img src={`images/${game.hTeam.triCode}.png`} alt='Home Logo' />
                 <p>{game.hTeam.triCode}</p>
-                {game.isGameActivated || game.endTimeUTC ? (
+                {(game.isGameActivated && game.period.current > 0) || game.endTimeUTC ? (
                   <span>{game.hTeam.score}</span>
                 ) : (
                   <span>
@@ -49,7 +49,7 @@ const Scoreboard = () => {
               </div>
               {/* Game Time */}
               <div className='scoreboard__time'>
-                {game.isGameActivated ? (
+                {game.isGameActivated && game.period.current > 0 ? (
                   <p className='scoreboard__timer'>{`${game.clock} - ${FormatQuarter(
                     game.period.current
                   )} Quarter`}</p>

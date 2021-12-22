@@ -15,6 +15,9 @@ const Home = () => {
         <Link to='/players'>
           <div className='home__tool'>Player Search</div>
         </Link>
+        <Link to='/teams'>
+          <div className='home__tool'>View Teams</div>
+        </Link>
       </div>
     </Layout>
   );
