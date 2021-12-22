@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { GetScoreboard } from '../helpers/GetScoreboard';
 import { FormatQuarter } from '../helpers/FormatQuarter';
 
@@ -24,7 +25,7 @@ const Scoreboard = () => {
             <div key={game.gameId} className='scoreboard__item'>
               {/* Visitor Team */}
               <div className='scoreboard__team'>
-                <img src={`images/${game.vTeam.triCode}.png`} alt='Visitor Logo' />
+                <img src={`/images/${game.vTeam.triCode}.png`} alt='Visitor Logo' />
                 <p>{game.vTeam.triCode}</p>
                 {(game.isGameActivated && game.period.current > 0) || game.endTimeUTC ? (
                   <span>{game.vTeam.score}</span>
@@ -37,7 +38,7 @@ const Scoreboard = () => {
               <div className='scoreboard__vs'>vs</div>
               {/* Home Team */}
               <div className='scoreboard__team'>
-                <img src={`images/${game.hTeam.triCode}.png`} alt='Home Logo' />
+                <img src={`/images/${game.hTeam.triCode}.png`} alt='Home Logo' />
                 <p>{game.hTeam.triCode}</p>
                 {(game.isGameActivated && game.period.current > 0) || game.endTimeUTC ? (
                   <span>{game.hTeam.score}</span>

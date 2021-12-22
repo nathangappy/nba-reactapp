@@ -1,0 +1,35 @@
+.roster {
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+  }
+
+  &__player {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 80%;
+    }
+    p {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__info {
+    padding: 1rem;
+    p {
+      text-align: center;
+    }
+  }
+}

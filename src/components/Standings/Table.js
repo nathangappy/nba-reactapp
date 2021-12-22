@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Table = ({ teams, title }) => {
   return (
@@ -21,14 +22,16 @@ const Table = ({ teams, title }) => {
           {teams.map((team) => (
             <tr key={team.teamId}>
               <th>
-                <div className='standings__identity'>
-                  <img
-                    src={`images/${team.teamSitesOnly.teamTricode}.png`}
-                    alt=''
-                    className='standings__logo'
-                  />
-                  {team.teamSitesOnly.teamName} {team.teamSitesOnly.teamNickname}
-                </div>
+                <Link to={`/teams/${team.teamId}`}>
+                  <div className='standings__identity'>
+                    <img
+                      src={`images/${team.teamSitesOnly.teamTricode}.png`}
+                      alt=''
+                      className='standings__logo'
+                    />
+                    {team.teamSitesOnly.teamName} {team.teamSitesOnly.teamNickname}
+                  </div>
+                </Link>
               </th>
               <th>{team.win}</th>
               <th>{team.loss}</th>

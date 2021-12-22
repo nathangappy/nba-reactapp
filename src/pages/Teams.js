@@ -17,14 +17,12 @@ const Teams = () => {
     setTeams(data);
   };
 
-  console.log(teams);
-
   return (
     <Layout>
       <div className='teams'>
         {teams &&
           teams.map((team) => (
-            <Link to={`/teams/${team.nickname}`} key={team.teamId}>
+            <Link to={`/teams/${team.nickname}`.toLowerCase()} key={team.teamId}>
               <div className='teams__team'>
                 <img src={`images/${team.tricode}.png`} alt='' />
                 <p>{team.fullName}</p>

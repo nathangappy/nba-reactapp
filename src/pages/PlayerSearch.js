@@ -40,7 +40,6 @@ const PlayerSearchPage = () => {
     if (e.target.value.length === 0) {
       setPlayers(initial_playerlist);
     }
-    console.log(players);
   };
 
   return (
