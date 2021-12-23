@@ -2,9 +2,6 @@
   // display: grid;
   // grid-template-columns: 1fr 1fr;
   padding: 1rem;
-  @include tablet {
-    padding: 0;
-  }
   &__search {
     h2 {
       font-size: 3rem;
