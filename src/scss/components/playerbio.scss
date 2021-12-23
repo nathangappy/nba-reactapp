@@ -7,7 +7,7 @@
     overflow: hidden;
     padding: 3rem 0 0 0;
     display: grid;
-    @include desktop {
+    @include tablet {
       grid-template-columns: 1fr 2fr;
     }
   }
@@ -17,7 +17,7 @@
     justify-content: center;
     img {
       width: 60%;
-      @include desktop {
+      @include tablet {
         width: 100%;
       }
     }
@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     grid-row: 1;
-    @include desktop {
+    @include tablet {
       grid-row: unset;
       flex-direction: column-reverse;
     }
@@ -39,7 +39,7 @@
   &__name {
     font-size: 2.5rem;
     text-transform: uppercase;
-    @include desktop {
+    @include tablet {
       font-size: 5rem;
     }
   }
@@ -49,14 +49,14 @@
     align-items: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    @include desktop {
+    @include tablet {
       font-size: 3rem;
     }
     img {
       width: 50px;
       height: 50px;
       margin-right: 1rem;
-      @include desktop {
+      @include tablet {
         width: 100px;
         height: 100px;
       }
@@ -74,7 +74,7 @@
     display: flex;
     flex-wrap: wrap;
     // flex-direction: column;
-    @include desktop {
+    @include tablet {
       // flex-direction: row;
     }
 
@@ -89,7 +89,7 @@
       align-items: center;
       // flex: 1;
       width: 50%;
-      @include desktop {
+      @include tablet {
         padding: 2rem 0;
         border-bottom: none;
         width: unset;

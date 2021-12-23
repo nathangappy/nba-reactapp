@@ -2,7 +2,7 @@
   // display: grid;
   // grid-template-columns: 1fr 1fr;
   padding: 1rem;
-  @include desktop {
+  @include tablet {
     padding: 0;
   }
   &__search {
@@ -10,7 +10,7 @@
       font-size: 3rem;
       text-transform: uppercase;
       text-align: center;
-      @include desktop {
+      @include tablet {
         font-size: 4rem;
       }
     }
@@ -31,7 +31,7 @@
 .results {
   font-size: 1.2rem;
   overflow-x: auto;
-  @include desktop {
+  @include tablet {
     font-size: 2rem;
   }
 

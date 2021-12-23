@@ -3,14 +3,14 @@
   padding: 2rem;
   background-color: $nba-blue;
   color: $nba-white;
-  @include desktop {
+  @include tablet {
     grid-template-columns: 2fr 8fr;
   }
   h1 {
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
-    @include desktop {
+    @include tablet {
       text-align: left;
     }
   }
@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  @include desktop {
+  @include tablet {
     justify-content: flex-end;
     margin-top: 0;
   }

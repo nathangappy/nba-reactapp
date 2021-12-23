@@ -34,7 +34,7 @@
     width: 100%;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    @include desktop {
+    @include tablet {
       font-size: 1.5rem;
     }
   }
