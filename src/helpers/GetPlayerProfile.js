@@ -15,7 +15,7 @@ export const GetPlayerProfile = async (personId) => {
 
   // Get Player profile
   const res = await fetch(
-    `http://data.nba.net/data/10s/prod/v1/${year}/players/${personId}_profile.json`
+    `https://data.nba.net/data/10s/prod/v1/${year}/players/${personId}_profile.json`
   );
 
   let json = await res.json();

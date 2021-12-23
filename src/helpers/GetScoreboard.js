@@ -7,7 +7,7 @@ export const GetScoreboard = async () => {
   const todays_date = yyyy + mm + dd;
 
   // Fetch scoreboard from api
-  const res = await fetch(`http://data.nba.net/data/10s/prod/v1/${todays_date}/scoreboard.json`);
+  const res = await fetch(`https://data.nba.net/data/10s/prod/v1/${todays_date}/scoreboard.json`);
   const json = await res.json();
   return json;
 };

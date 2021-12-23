@@ -9,7 +9,9 @@ export const GetTeamDetails = async (team) => {
   const year = new Date().getFullYear();
 
   // Get team roster
-  const res = await fetch(`http://data.nba.net/data/10s/prod/v1/${year}/teams/${team}/roster.json`);
+  const res = await fetch(
+    `https://data.nba.net/data/10s/prod/v1/${year}/teams/${team}/roster.json`
+  );
   const json = await res.json();
 
   // Get bio for each player on roster
