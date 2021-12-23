@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { GetPlayerProfile } from '../helpers/GetPlayerProfile';
+import React from 'react';
 
 const PlayerBio = ({ profile, personId }) => {
   return (
