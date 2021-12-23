@@ -8,11 +8,12 @@ const PlayerBio = ({ profile, personId }) => {
       {profile && (
         <>
           <div className='playerbio__container'>
-            <img
-              src={`https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/${personId}.png`}
-              alt=''
-              className='playerbio__headshot'
-            />
+            <div className='playerbio__headshot'>
+              <img
+                src={`https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/${personId}.png`}
+                alt=''
+              />
+            </div>
             <div className='playerbio__fundamentals'>
               <div className='playerbio__current'>
                 <img src={`/images/${profile.team.tricode}.png`} alt='Logo for players team' />

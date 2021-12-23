@@ -50,9 +50,11 @@ const Standings = () => {
           Division
         </button>
       </div>
-      {standings_type === 'Overall' && <OverallTable standings={standings} />}
-      {standings_type === 'Conference' && <ConferenceTable standings={standings} />}
-      {standings_type === 'Division' && <DivisionTable standings={standings} />}
+      <div className='standings__container'>
+        {standings_type === 'Overall' && <OverallTable standings={standings} />}
+        {standings_type === 'Conference' && <ConferenceTable standings={standings} />}
+        {standings_type === 'Division' && <DivisionTable standings={standings} />}
+      </div>
     </div>
   );
 };

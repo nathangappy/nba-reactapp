@@ -7,8 +7,12 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5rem;
+    }
   }
 
   &__player {
@@ -22,7 +26,10 @@
       width: 80%;
     }
     p {
-      font-size: 2.5rem;
+      font-size: 1.6rem;
+      @include desktop {
+        font-size: 2.5rem;
+      }
     }
   }
 

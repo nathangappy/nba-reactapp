@@ -1,21 +1,25 @@
 .player {
   // display: grid;
   // grid-template-columns: 1fr 1fr;
-
+  padding: 1rem;
+  @include desktop {
+    padding: 0;
+  }
   &__search {
     h2 {
-      font-size: 4rem;
+      font-size: 3rem;
       text-transform: uppercase;
       text-align: center;
+      @include desktop {
+        font-size: 4rem;
+      }
     }
-
     form {
       margin: 0 auto;
       max-width: 600px;
       // background-color: $nba-blue;
       padding: 4rem;
     }
-
     input {
       font-size: 2rem;
       padding: 1rem;
@@ -25,7 +29,11 @@
 }
 
 .results {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  overflow-x: auto;
+  @include desktop {
+    font-size: 2rem;
+  }
 
   &__table {
     width: 100%;

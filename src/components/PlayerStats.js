@@ -6,10 +6,10 @@ const PlayerStats = ({ profile }) => {
     stats = profile.league.standard.stats.regularSeason.season;
   }
   return (
-    <div className='playerstats'>
-      {stats && (
-        <>
-          <h1>Career Averages</h1>
+    <>
+      <h1 className='playerstats__header'>Career Averages</h1>
+      <div className='playerstats'>
+        {stats && (
           <table className='playerstats__table'>
             <tbody>
               <tr className='playerstats__headers'>
@@ -46,9 +46,9 @@ const PlayerStats = ({ profile }) => {
               ))}
             </tbody>
           </table>
-        </>
-      )}
-    </div>
+        )}
+      </div>
+    </>
   );
 };
 

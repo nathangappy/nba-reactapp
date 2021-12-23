@@ -1,6 +1,10 @@
 .playerstats {
   font-size: 1.6rem;
-  margin-top: 2rem;
+  overflow-x: auto;
+
+  &__header {
+    margin: 2rem 0;
+  }
 
   &__table {
     width: 100%;
