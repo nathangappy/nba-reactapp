@@ -11,7 +11,13 @@ export const GetPlayerProfile = async (personId) => {
   const playerTeam = teams.filter((team) => team.teamId === playerBio[0].teamId);
 
   // Get current year
-  const year = new Date().getFullYear();
+  let year = new Date().getFullYear();
+
+  // Account for api not handling early year changes
+  const month = new Date().getMonth();
+  if (month < 6) {
+    year -= 1;
+  }
 
   // Get Player profile
   const res = await fetch(

@@ -6,7 +6,13 @@ export const GetTeamDetails = async (team) => {
     roster: [],
   };
   // Get current year
-  const year = new Date().getFullYear();
+  let year = new Date().getFullYear();
+
+  // Account for api not handling early year changes
+  const month = new Date().getMonth();
+  if (month < 6) {
+    year -= 1;
+  }
 
   // Get team roster
   const res = await fetch(
